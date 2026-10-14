@@ -1,0 +1,1253 @@
+# Synauson End User License Agreement
+
+**Version 1.13**
+**Effective date:** October 14, 2026
+**Licensor:** Synauson LLC, a Utah limited liability company
+
+This End User License Agreement (the "**Agreement**") is between Synauson LLC
+("**Synauson**", "**we**" or "**us**") and the business or other organization that
+accepts it ("**Customer**" or "**you**"). It governs your use of the synauson
+engine and the related materials described below. If you accept on behalf of an
+organization, you confirm that you have authority to bind it. If you accept as an
+individual for your own business, "Customer" means you.
+
+The Software is for business and professional use, not personal or household use.
+
+---
+
+## 1. Definitions
+
+Capitalized terms have the meanings below. Other terms are defined where they first
+appear.
+
+1.1 "**Affiliate**" means an entity that controls, is controlled by, or is under
+common control with a party, where "control" means owning more than 50% of the
+voting interests or having the power to direct its management.
+
+1.2 "**AI Capability**" means a feature of the Software that uses a Model, such as
+voice activity detection, end-of-turn detection, speech-to-text or text-to-speech.
+
+1.3 "**AI Session**" means one participant in a Conference, for as long as that
+participant uses one or more AI Capabilities. A participant counts as one AI Session
+however many AI Capabilities it uses. Participants that use no AI Capability are not
+AI Sessions. A Conference is not an AI Session either: it counts against the
+Conference Limit, and each AI Session in it counts against the Session Limit (Section
+3.1).
+
+1.4 "**Bonus Sessions**" means the AI Sessions added to your Session Limit under the
+Model Improvement Program (Sections 13.6 and 13.7).
+
+1.5 "**Call**" means one participant's connection to a Conference handled by the
+Software, from when the participant joins until it leaves.
+
+1.6 "**Conference**" means one conference that an Instance runs, with or without AI
+Capabilities and whether or not anyone is connected to it, from its creation until it
+ends.
+
+1.7 "**Conference Limit**" means the number of Conferences that may run at the same
+time under your License File: the Free Plan's base of 10, plus any Conferences you
+buy. Bonus Sessions add nothing to it. Only an Order Form can make the Conference
+Limit unlimited. The Conference Limit and the Session Limit are independent, and
+both apply (Section 3.1).
+
+1.8 "**Customer Product**" means a product or service that you build and that
+incorporates or calls the Software.
+
+1.9 "**Documentation**" means the user and operator documentation Synauson publishes
+for the release of the Software you run. A later edit to the Documentation does not
+change what that release does or what this Agreement lets you do with it.
+
+1.10 "**End User**" means a third party to whom you distribute the Software as part
+of a Customer Product under Section 4.
+
+1.11 "**Engine Libraries**" means the proprietary native libraries Synauson
+distributes for use in-process from other software, including the libraries inside
+the jsyn-natives packages for each supported platform.
+
+1.12 "**Free Plan**" means the Plan Synauson issues without charge (Section 2.3).
+
+1.13 "**Instance**" means one running copy of the Software: one server process, or
+one in-process runtime of the Engine Libraries.
+
+1.14 "**License Data**" means the information the Software sends to the Synauson
+Services to renew its License File, report usage and download Models, as Sections
+12.3 and 12.4 list it, including Usage Reports.
+
+1.15 "**License File**" means the signed file the Software obtains in exchange for a
+License Key, or that Synauson provides for an air-gapped deployment (Section 9.3). It
+states your Plan, your Session Limit and your Conference Limit, the date your paid
+Plan's subscription ends or your Developer License (Section 2.8) expires, if any, and
+the date by which the License File must be renewed.
+
+1.16 "**License Key**" means the key Synauson issues to you to identify your
+license.
+
+1.17 "**Model**" means a machine learning model, with its weights, vocabularies,
+voices, lexicons and related data files, that the Software downloads or that you
+import into its model store. Each Model is identified by a codename and a generation
+number, such as "spartito-1".
+
+1.18 "**Model Terms**" means the license terms, notices and attributions that apply
+to a Model, as set out in that Model's Notice File.
+
+1.19 "**Model Improvement Program**" or "**Program**" means the optional program in
+Section 13, and "**Program Data**" means the statistics Section 13.2 describes.
+
+1.20 "**Notice File**" means a file of third-party notices and license texts that
+Synauson provides with the Software or with a Model.
+
+1.21 "**Open-Source Component**" means software, data or other material in or
+distributed with the Software that its owner licenses under an Open-Source License.
+
+1.22 "**Open-Source License**" means a license approved by the Open Source
+Initiative, a free software license published by the Free Software Foundation, a
+Creative Commons license that permits modification and redistribution, or any other
+license under which the owner of a component makes it available to the public with
+permission to copy, modify and redistribute it.
+
+1.23 "**Order Form**" means an ordering document, quote, statement of work or written
+license grant that refers to this Agreement and that both parties sign or otherwise
+accept in writing, including by email.
+
+1.24 "**Plan**" means the plan named in your License File. There are no feature
+tiers: every Plan includes every AI Capability on every AI Session. Plans differ only
+in the number of AI Sessions and Conferences, the burst allowance, support and, for
+the Developer Plan, the use it permits and its term (Section 2.8), and paid Plans can
+earn Bonus Sessions (Section 13.6). The Free Plan is a base of 4 AI Sessions and 10
+Conferences, and a paid Plan includes that base and adds the AI Sessions and
+Conferences it buys. A Developer License has limits of its own (Section 2.8).
+
+1.25 "**Separately Licensed Materials**" means the materials described in Section 6.
+
+1.26 "**Server Image**" means the synauson server distributed as an OCI container
+image, including the synauson server binary, the Open-Source Components it contains,
+and their notices.
+
+1.27 "**Session Limit**" means the number of AI Sessions that may run at the same
+time under your License File: the Free Plan's base of 4, plus any AI Sessions you buy
+and any Bonus Sessions. Every License File carries every AI Capability. Only an Order
+Form can make the Session Limit unlimited.
+
+1.28 "**Software**" means the Server Image, the Engine Libraries, the Documentation,
+Synauson Model Changes, and any updates, fixes or new versions of them that Synauson
+makes available to you. It does not include the Separately Licensed Materials, the
+Open-Source Components (Section 7) or the parts of a Model licensed under its Model
+Terms (Section 8).
+
+1.29 "**Synauson Model Changes**" means changes Synauson makes to a Model, including
+components it adds or replaces, such as fine-tuning adapters, weights merged from
+them and components it trains itself, as identified in that Model's Notice File.
+
+1.30 "**Synauson Services**" means the online services Synauson operates for the
+Software: the licensing and usage services, which renew License Files and receive
+Usage Reports, and Model distribution.
+
+1.31 "**Usage Report**" means the report Section 3.4 describes.
+
+1.32 "**Your Content**" means the audio, video, text and other data that you or your
+callers send to or receive from the Software, and what the Software derives from that
+content, including transcripts, synthesized speech, detection results and turn
+events. License Data and Program Data are not Your Content.
+
+---
+
+## 2. License Grant
+
+2.1 **Grant.** Subject to this Agreement, Synauson grants you a non-exclusive,
+non-transferable license, during the term of this Agreement, to install and run any
+number of Instances of the Software on systems you control or that a hosting provider
+operates for you, and to use the Software for your internal business purposes,
+including to operate Customer Products that you provide to others as a hosted
+service. You may not sublicense the Software except as Section 4 allows. Your Plan,
+Session Limit and Conference Limit set how much you may use the AI Capabilities and
+how many Conferences you may run (Section 3).
+
+2.2 **Plans.** Every Plan permits the Software's conferencing and media functions up
+to your Conference Limit, with no cap on participants in a Conference, and every AI
+Capability up to your Session Limit, in each case while Section 9 allows and, under a
+Developer License, only for the uses Section 2.8 permits. While connected, a paid
+Plan never gives you less than the Free Plan. The Plans on offer
+are described on Synauson's website and in your Order Form, if you have one.
+
+2.3 **Free Plan.** Each organization, or individual acting for their own business,
+may hold one Free Plan license. If you hold a paid Plan, its license counts as your
+one Free Plan license and already includes the Free Plan's base. Synauson may treat
+everyone who requests License Keys with email addresses at the same domain as one
+organization, except a public webmail domain such as gmail.com. If an organization
+holds more than one Free Plan license, counting a paid Plan's license as one,
+Synauson may revoke the extra Free Plan License Keys after at least 30 days' notice
+by email (Section 9.8). An organization with a paid Plan keeps its paid Plan's
+license. One without may choose, during those 30 days, which Free Plan License Key to
+keep; if it does not choose, Synauson keeps the first one it issued to that
+organization. You may use the Free Plan in production, for commercial
+purposes, without charge and without time limit. It includes every AI Capability for
+up to 4 AI Sessions, and up to 10 Conferences, at a time across all your Instances,
+with no burst allowance and no Bonus Sessions, and comes without support (Section 11)
+or warranty (Section 18). Free Plan License Files renew without charge while this
+Agreement is in force, subject to Sections 9.8 and 23.3. Like every Plan, it relies
+on the connection of Section 9.2.
+
+2.4 **Paid Plans.** A Plan other than the Free Plan and the Developer Plan is granted
+for the subscription term and fees stated in your Order Form or in the purchase flow
+through which you obtained your License Key.
+
+2.5 **Affiliates and contractors.** Your Affiliates and contractors may use the
+Software on your behalf and for your benefit under your License Key, provided they
+comply with this Agreement. You are responsible for them as for yourself.
+
+2.6 **Copies.** You may make the copies of the Software reasonably needed for the use
+this Agreement permits, including in container registries, build caches, backups and
+disaster-recovery systems. Each copy must keep the Notice Files and the LICENSE file
+containing this Agreement that ship with the Software.
+
+2.7 **Reservation of rights.** Synauson reserves all rights not expressly granted in
+this Agreement.
+
+2.8 **Developer Licenses.** On request, Synauson issues developer licenses
+("**Developer Licenses**") without charge to any organization, or individual acting
+for their own business, that has accepted this Agreement, whatever its Plan. A
+Developer License is a License Key whose License File names the developer plan (the
+"**Developer Plan**").
+
+(a) *Development only.* You may use a Developer License only to develop and test
+Customer Products: by your developers and by software agents acting for them; in
+continuous integration and automated tests; in staging and quality-assurance
+environments; and for demonstrations and pilots, including to prospective customers,
+that carry no live traffic. You may not use a Developer License in production,
+meaning to handle live Calls for your End Users, your customers or your own business
+operations, or any Call from a person who is not testing the Customer Product or
+watching a demonstration of it.
+
+(b) *Limits.* Each Developer License has its own Session Limit of 4 AI Sessions and
+its own Conference Limit of 10 Conferences, with no burst allowance, no Bonus Sessions
+and no fees for use above them. Use under a Developer License never counts against
+your Plan's limits, and your Plan never adds to a Developer License's.
+
+(c) *How many, and for how long.* Synauson issues as many Developer Licenses as your
+organization reasonably needs, and may ask who uses each one. Each runs for one year
+from issue and is renewed for another year on request. A Developer License that
+expires does not continue on the Free Plan; Section 9.7 describes what happens.
+Developer Licenses do not count as your one Free Plan license (Section 2.3).
+
+(d) *Marking and revocation.* The Software marks a Developer License as such in the
+license status it reports and in its logs, and says there that it is not for
+production use. Synauson may revoke a Developer License that is used in production
+after at least 7 days' notice by email, or one that it reasonably believes is no
+longer needed after at least 30 days' notice by email (Section 9.8).
+
+(e) *Otherwise.* Developer Licenses carry the support your Plan includes, if any, and
+no warranty (Section 18). Like every Plan, they rely on the connection of Section
+9.2, and they send Usage Reports (Section 3.4).
+
+---
+
+## 3. The Session Limit and the Conference Limit
+
+3.1 **Two pools for all your Instances.** Your Session Limit is one pool of AI
+Sessions, and your Conference Limit one pool of Conferences, each shared by every
+Instance, replica and site that runs under your License Key. The two pools are
+independent and both apply: a Conference uses one Conference however many
+participants it has and whatever they use, and each participant in it that uses an AI
+Capability also uses one AI Session. On the Free Plan, for example, one caller
+talking to an AI agent, where the caller's participant uses speech-to-text and
+text-to-speech, uses 1 of 10 Conferences and 1 of 4 AI Sessions; a three-way
+Conference in which only one participant uses AI Capabilities uses 1 Conference and 1
+AI Session. Capacity follows your traffic to wherever it arrives, including on
+failover (Section 3.5), and you don't have to divide it between Instances yourself.
+Every other License Key Synauson issues to you, including one for End User
+installations (Section 4.4) and each Developer License (Section 2.8), has its own
+pools, Session Limit and Conference Limit, unless your Order Form groups them into
+one.
+
+3.2 **Burst allowance.** On a paid Plan, when a pool is full, the Software admits
+further AI Sessions up to 25% of the AI Sessions you bought, and further Conferences
+up to 25% of the Conferences you bought, in each case rounded up to a whole AI
+Session or Conference, or up to any higher allowance, at most 200% of what you
+bought, that your Order Form states. With 10
+AI Sessions bought, for example, your AI Session pool is 14 and you can run up to 17;
+with 10 Conferences bought, your Conference pool is 20 and you can run up to 23. The
+Free Plan's base of 4 AI Sessions and 10 Conferences never has a burst, and neither
+does a Developer License. Each burst belongs to its whole pool and is shared across
+your Instances: each Instance's share (Section 3.5) carries part of it, and a single
+Instance gets all of it. Using the burst is never a breach of this Agreement, and the
+busiest 5% of the hours in each month (about 36 hours) are set aside when Section 3.6
+measures your use.
+
+3.3 **No dropped calls.** Neither your Session Limit nor your Conference Limit ever
+ends a Conference, an AI Session or a Call in progress. Once a burst allowance is
+used up, new AI Sessions or new Conferences, as the case may be, are refused until
+room frees up. A full Conference pool refuses only new Conferences, never a Call
+joining a Conference already running. A Call that uses no AI Capability needs no AI
+Session, and refusing a Call an AI Session does not end its Conference.
+
+3.4 **Usage Reports.** To share the pools, each Instance on every Plan sends the
+Synauson Services a Usage Report about every 30 seconds, one more when its AI
+Sessions or its Conferences near its share of that pool, and a last one when it
+shuts down cleanly. Section 12.3(c) lists everything a Usage Report contains. Each
+report carries the Instance's peak numbers of AI Sessions and of Conferences for
+every minute the Synauson Services have not yet received,
+up to a day of minutes per report; the rest follow in later reports. After an
+interruption, the Instance therefore uploads the minutes it could not send earlier,
+under the identifier in use when they were counted. It does so after a restart too
+when it keeps a state directory as the Documentation describes. A Usage Report never
+contains Your Content (such as audio or transcripts), conference or participant
+identifiers, or phone numbers or other caller identifiers. The Software writes each
+Usage Report it sends for its own process to its log at debug level, so you can see
+what is sent. Usage Reports are part of licensing. They are separate from the Model
+Improvement Program, and joining or leaving the Program does not change them.
+
+3.5 **Failover and offline Instances.** While connected, each Instance holds a share
+of each of your pools as a lease of about 10 minutes, renewed with each Usage Report,
+and the shares of a limited pool add up to that pool. If an Instance stops reporting,
+its shares stay reserved for it until its lease ends, because it may still be
+admitting AI Sessions and Conferences; then the
+shares pass to the Instances still reporting, so the capacity follows your traffic.
+This applies to an Instance that stops without a clean shutdown too, so an Instance
+restarted within those 10 minutes may have less capacity until the old lease ends. An
+Instance that cannot reach the Synauson Services keeps running for the period Section
+9.4 allows and keeps the capacity it had: it admits AI Sessions and Conferences up to
+the shares it last held and the burst on those shares (Section 3.2). It remembers
+those shares across restarts when it keeps a state directory, and uses each only
+while the limit of its pool is unchanged; Section 9.7 covers expiry while offline. An
+Instance that has a License File but has never received a share of a pool admits
+nothing from that pool until it connects: without a share of the AI Session pool it
+admits no AI Sessions, and without a share of the Conference pool it starts no
+Conferences, with or without AI Capabilities, unless your Conference Limit is
+unlimited. The Instance keeps its per-minute
+counts and sends them when the connection returns. Because each Instance admits AI
+Sessions and Conferences against its own shares, an Instance may briefly refuse a new
+AI Session or Conference while another holds unused room, until its next Usage Report
+rebalances the shares.
+
+3.6 **Sustained use above the pool.** Use above your Session Limit or your Conference
+Limit is never a breach of this Agreement. Synauson measures each pool separately.
+For each License Key, each pool and each hour, Synauson takes the highest number of
+AI Sessions, or of Conferences, running at the same time across the Instances under
+that key, as their Usage Reports show. Any hour in which an Instance used a share
+after its lease had ended (Section 3.5), and so may have overlapped with the
+Instances that took that share over, is counted as zero, and so, for Conferences, is
+any hour in which an Instance under that key ran a version of the Software whose
+Usage Reports do not count Conferences. Your use of a pool for a calendar month (UTC)
+is the 95th percentile of its hourly figures: every hour of the month counts, an hour
+with no Usage Report also counts as zero, and after the busiest 5% of the month's
+hours are set aside, your use is the highest hourly figure that remains. The notice,
+invoicing and three-month rules below apply to each pool on its own. If that measure
+is above that key's Session Limit or Conference Limit, as the case may be, Synauson
+will tell you, with the figures. The excess is that measure minus that limit. For
+each later month in which it recurs, Synauson may invoice the excess, showing that
+month's figures, at your Plan's per-session or per-conference rate prorated for one
+month, as your Order Form states or, if you have no Order Form or it states no rate,
+as the price list on Synauson's website states. Synauson will not invoice excess for
+the month in which it tells you or any earlier month, and after three months in a row
+without excess it must tell you again before invoicing. You may move to a larger
+Session Limit or Conference Limit at any time instead. Excess on the Free Plan or
+under a Developer License is never invoiced.
+
+---
+
+## 4. Internal Use, Redistribution and OEM Rights
+
+4.1 **Internal use by default.** Unless an Order Form grants redistribution rights,
+you may not distribute, sell, lease, lend or otherwise make the Software available to
+any third party, other than your Affiliates and contractors under Section 2.5.
+Operating a Customer Product as a hosted service, where the Software runs only on
+systems you or your hosting provider control, is not a distribution.
+
+4.2 **Redistribution where granted.** If an Order Form grants redistribution or OEM
+rights, you may distribute the Software, in object-code form and only as an
+integrated part of a Customer Product, to End Users, within any limits the Order Form
+states.
+
+4.3 **Flow-down terms.** Before any End User receives the Software, you must bind
+that End User to written terms that:
+
+(a) protect Synauson and the Software at least as well as Sections 5, 9.9, 15, 16, 18
+and 19;
+
+(b) permit the End User to do everything Section 7.2 permits, and do not restrict any
+right that an Open-Source License grants;
+
+(c) pass on the Notice Files unchanged, including each Model's Notice File for any
+Model you distribute or that the End User's installation downloads, and require the
+End User to comply with the Model Terms;
+
+(d) tell the End User that its installation must connect to the Synauson Services and
+will send Synauson License Data (Sections 9.2 and 12.3), and what happens when it
+cannot connect or when your License Key lapses or is disabled (Sections 9.4 to 9.8);
+
+(e) disclaim, on Synauson's behalf, all warranties and all liability of Synauson to
+the End User, to the extent the law permits; and
+
+(f) make no representation, warranty or commitment on Synauson's behalf.
+
+4.4 **License Keys of End Users.** Unless your Order Form says otherwise, each
+installation of a Customer Product runs under a License Key Synauson issued to you
+for that purpose, with the Session Limit and Conference Limit your Order Form states
+for it (Section 3.1).
+You will take reasonable measures to keep End Users from extracting your License Key
+and using it outside the Customer Product.
+
+4.5 **Your responsibility.** You are responsible for your Customer Products, your End
+Users' compliance with the flow-down terms, support of your End Users, and your own
+compliance with the Open-Source Licenses of the components you distribute.
+
+---
+
+## 5. Restrictions
+
+Except as this Agreement or the law expressly permits, and subject always to Section
+7.2, you will not, and will not allow anyone else to:
+
+(a) copy, modify, translate or create derivative works of the Software;
+
+(b) reverse engineer, decompile or disassemble the Software, or otherwise attempt to
+derive its source code;
+
+(c) distribute, sublicense, sell, rent, lease or lend the Software, or offer it to
+third parties for their own installation, except as Section 4 permits;
+
+(d) remove, alter or obscure any proprietary notice, Notice File or license text in
+the Software;
+
+(e) share your License Key with anyone not entitled to use it under Section 2.5 or
+4.4, or publish it; or
+
+(f) use the Software in violation of applicable law.
+
+These restrictions apply only to the Software. Sections 6, 7 and 8 govern the
+Separately Licensed Materials, the Open-Source Components and the Models.
+
+---
+
+## 6. Separately Licensed Materials
+
+Synauson publishes the following under the Apache License, Version 2.0, and not under
+this Agreement: (a) the Java source code and Java libraries of the jsyn software
+development kit (not the Engine Libraries, which are part of the Software); and (b)
+the definitions of the synauson gRPC API and the client packages generated from them
+that Synauson publishes. Your use of them is governed only by that license and its
+notices. They do not by themselves give you any right to run the Software; that right
+comes from this Agreement and a License Key.
+
+---
+
+## 7. Open-Source Components
+
+7.1 **Their own licenses govern.** The Software contains or is used with Open-Source
+Components. Each is licensed to you under its own Open-Source License, identified in
+the Notice Files and in Appendix A. Where this Agreement conflicts with an
+Open-Source License as to the component it covers, the Open-Source License prevails,
+and no part of this Agreement limits a right that an Open-Source License grants you.
+Code that Synauson derived from an Open-Source Component and changed, where that
+component's license allows this, is part of the Software, and the original's notice
+and license travel with it in the Notice Files.
+
+7.2 **Permission to modify, debug and replace (LGPL).** Parts of the Software link at
+run time with libraries licensed under the GNU Lesser General Public License, version
+2.1 or a later version ("**LGPL**"), including GStreamer and GLib. For that reason,
+and notwithstanding Section 5 or anything else in this Agreement, Synauson permits
+you to:
+
+(a) modify the Software, together with the LGPL libraries it uses, for your own use;
+
+(b) reverse engineer the Software to the extent needed to debug such modifications;
+and
+
+(c) replace any LGPL library the Software uses with a modified or different version
+that is interface-compatible, and run the Software with it.
+
+These permissions extend to End Users under Section 4.3(b). They cover modification,
+debugging and replacement, and do not let you distribute Synauson's proprietary code
+beyond Section 4. Your Plan, Session Limit and Conference Limit still set how much
+use of the AI Capabilities and how many Conferences you have paid for, whether or not
+you modify the Software. Synauson will
+not use License Keys, License Files, signature checks or any other means to stop you
+from exercising these permissions, and replacing an LGPL library does not by itself
+affect your License File.
+
+7.3 **Support and these permissions.** Synauson may ask you to reproduce a problem
+with the libraries the Documentation names before investigating further. It will not
+otherwise treat your use of Section 7.2 as a reason to refuse support, suspend a
+License Key or end this Agreement.
+
+7.4 **Source code.** For each release of the Server Image published with this
+Agreement, Synauson publishes a companion source image containing the source of every
+component in the Server Image whose license requires source to be made available,
+including the operating-system source packages and their patches. Synauson keeps each
+source image available for as long as it offers the matching Server Image, and for at
+least three years after that. Any written offer in a Notice File is part of that
+Notice File and is not limited by this Agreement. Synauson's proprietary source code
+is not included.
+
+7.5 **Separate programs in the Server Image.** The Server Image contains an operating
+system base and programs licensed under the GNU General Public License and other
+Open-Source Licenses. They are separate programs, and you may use, copy, modify and
+redistribute them under their own licenses, independently of this Agreement.
+
+7.6 **Components you install.** The Engine Libraries need libraries that you obtain
+and install yourself, such as GStreamer. Their licenses are between you and their
+licensors. If you install plugins, codecs or other components beyond those the
+Documentation names, their license and patent terms are your responsibility.
+
+7.7 **No patent license for codecs.** Synauson grants no license under any
+third-party patent, including patents on audio or video codecs or formats.
+
+---
+
+## 8. Models
+
+8.1 **Delivery.** The Software downloads the Models from the Synauson Services, using
+your License Key. You may also copy Models into a model store yourself, for example
+to fill a store ahead of time or for an air-gapped deployment, as the Documentation
+describes. Only an Instance running under a valid License Key, or a person entitled
+to use that License Key, may download a Model.
+
+8.2 **Model Terms.** Each Model comes with its Model Terms, set out in its Notice
+File. Synauson gives you the Notice Files of the Models when it issues your License
+Key, and you accept their Model Terms together with this Agreement. Each Notice File
+is also delivered with its Model's download and stored beside the Model in the model
+store, where the server's `synauson models notices` command prints them. Appendix B
+lists the current Models by codename and summarizes their Model Terms.
+
+8.3 **What the Model Terms cover.** The parts of a Model that come from its original
+licensor are licensed to you under its Model Terms, not under this Agreement, and
+nothing in this Agreement restricts a right the Model Terms grant you. You must
+comply with the Model Terms of every Model you use or distribute, including their use
+policies, attribution and notice requirements, conditions on redistribution,
+indemnities and termination conditions. Some Model Terms contain terms in favor of
+the original licensor, such as an indemnity or a duty to follow its use policies;
+those terms bind you in favor of that licensor. If a Model's Model Terms end for you,
+you must stop using that Model.
+
+8.4 **Synauson Model Changes.** Where a Model includes Synauson Model Changes, they
+are part of the Software and licensed under this Agreement, on top of the Model
+Terms for the original Model. The original licensor's notices and terms still flow
+to you through the Notice File, which also states any terms that bind the changes,
+such as terms of data used to make them.
+
+8.5 **Availability.** Synauson may release new Models and new generations of a Model,
+and may change which Model provides an AI Capability; each comes with its own Notice
+File. Synauson will keep the Models that a supported release of the Software uses
+available for download while that release is supported (a release for which Synauson
+still publishes security fixes under Section 11.1, on every Plan), and will give at
+least 90 days' notice before withdrawing any of them, unless the law, the Model Terms
+or a third-party claim requires it sooner. You may keep using copies you already
+have, as their Model Terms allow. If Synauson withdraws a Model your paid Plan relies
+on and offers no comparable replacement, you may end that Plan and Synauson will
+refund the prepaid fees for the rest of its term.
+
+---
+
+## 9. License Keys and Staying Connected
+
+9.1 **License Keys are credentials.** Keep your License Keys confidential and secure.
+You are responsible for all use of the Software under them. Tell Synauson promptly if
+one is lost or exposed; Synauson will issue a replacement under Section 9.8 and may
+disable the exposed one.
+
+9.2 **The Software connects to Synauson.** Every Instance, on every Plan including
+the Free Plan, needs a connection to the Synauson Services, unless Section 9.3
+applies. Each Instance sends Usage Reports (Section 3.4), and at startup and about
+once a day the same small encrypted request also renews its License File, so one
+connection keeps your license current and your pools shared; without it, Section 9.4
+applies. A successful contact is a Usage Report or renewal that the Synauson Services
+accept. The Software verifies the License File and every response with public keys
+built into the Software, and keeps the License File and, in its state directory, the
+latest proof of contact. It also checks that each response is current, so the host's
+clock must be accurate to within a few minutes. Section 12.3 lists everything
+licensing sends.
+
+9.3 **Air-gapped deployments.** If your systems cannot connect to the Synauson
+Services, Synauson offers air-gapped deployments by individual arrangement. Contact
+Synauson; a negotiated Order Form then provides a License File for that deployment
+and states how its AI Sessions and Conferences are counted. Instances in an
+air-gapped deployment never contact the Synauson Services or Synauson's status
+service, and download no Models; you copy the Models into their model store yourself
+(Section 8.1).
+
+9.4 **When an Instance cannot reach the Synauson Services.** Subject to Section 9.5,
+an Instance keeps working, within the share Section 3.5 describes, for 7 days after
+its last successful contact with the Synauson Services or, if it has never made a
+successful contact, for 7 days after its License File was issued. The Software warns
+you every hour from the first hour without contact and logs an error every day from
+the third day. After 7 days without contact, on any Plan, Calls in progress continue
+to their end, but the Instance accepts no new Calls or Conferences, with or without
+AI Capabilities, and cannot restart, until it makes a successful contact again. It
+recovers as soon as it does, and the 7 days start again in full. If your systems
+cannot connect, see Section 9.3.
+
+9.5 **Outages on Synauson's side.** Synauson runs a status service at
+status.synauson.com, separately from the Synauson Services. When the Synauson
+Services have an outage, Synauson posts a signed outage notice there when it learns
+of the outage, and clears the notice when the outage ends; notices are not yet posted
+automatically. An Instance whose Usage Reports fail, other than because the Synauson
+Services refuse its License Key, checks for a notice about every 5 minutes while they
+keep failing, and, when it keeps a state directory, remembers it across restarts.
+While a notice is active, the 7 days under Section 9.4 do not run out for an Instance
+that can read the notice and whose clock is within 10 minutes of the correct time.
+After the notice is cleared, the 7 days run from the later of the Instance's last
+successful contact and the clearing. A License File lasts at least 30 days from its
+last renewal, and a notice cannot extend it, so the notice protects an Instance only
+until the License File it received at its last successful renewal expires. An
+Instance that cannot read the notice, for example because its own network is also
+down, recovers in full at its next successful contact (Section 9.4). If Synauson ever
+stops operating the Synauson Services for good, it will first make available a
+release or License File that lets your Instances keep your paid Plan without them for
+the rest of your subscription term, keep the Free Plan without them after that, and
+keep each Developer License for the rest of its term.
+
+9.6 **A License File to start.** Unless Section 9.3 applies, an Instance can start
+only if it has a valid License File and is within the period Sections 9.4 and 9.5
+allow. An Instance with no License File of its own, such as a new Instance or one
+restarted without its state directory, must reach the Synauson Services to start,
+including during an outage under Section 9.5. Keeping the state directory on
+persistent storage, as the Documentation describes, lets a restart go ahead without
+the connection.
+
+9.7 **Expiry.** A License File states the date your paid Plan or Developer License
+expires. The Software starts warning you at least 14 days before that date. If a paid
+Plan's date passes without renewal, your license continues automatically on the Free
+Plan: Conferences, AI Sessions and Calls in progress finish, and new AI Sessions and
+new Conferences are admitted within the Free Plan's Session Limit and Conference
+Limit, including after a restart, while the Instance stays in contact (Section 9.4).
+An Instance that is out of contact when your paid Plan expires admits no new AI
+Sessions or Conferences from a pool whose limit changed until it reconnects and
+receives its Free Plan share of that pool.
+Renewing restores your Plan at each Instance's next daily renewal or restart. A
+Developer License does not continue on the Free Plan: once it expires, Calls in
+progress finish, and the Instances under it start no new Conferences or Calls, with
+or without AI Capabilities, including after a restart, until Synauson renews it,
+which it does on request (Section 2.8).
+
+9.8 **Suspension.** Synauson suspends or revokes a License Key only (a) when it is
+exposed or used by someone not entitled to it, (b) for a material breach, other than
+non-payment of fees, that you have not cured within 30 days after written notice
+under Section 17.4, (c) when the law requires it, (d) for a Developer License, after
+at least 7 days' notice by email if it is used in production, or after at least 30
+days' notice by email if Synauson reasonably believes it is no longer needed (Section
+2.8(d)), or (e) for Free Plan License Keys beyond one per organization, after at
+least 30 days' notice by email (Section 2.3). Synauson will notify you by email
+before suspending under (b), and as soon as practicable under (a) or (c), with the
+reason, unless the law forbids it. Under (a), Synauson issues you a replacement
+License Key at once, unless you shared or misused the exposed one yourself, and keeps
+the exposed key working for 7 days so you can switch your Instances over, unless it
+is being used to harm you or Synauson. A suspension or revocation takes effect at
+each Instance's next renewal (Section 9.2): Calls in progress finish, and from then
+on the Instance starts no new Calls and cannot restart under that License Key. This
+applies equally to End User installations under that key, subject to any wind-down
+your Order Form provides. Unpaid fees never lead to a suspension: if fees more than
+30 days overdue remain unpaid 10 days after written notice, Synauson may end the paid
+Plan they are for, and your license continues on the Free Plan as on expiry under
+Section 9.7. Apart from these cases, a License Key stops renewing only under Section
+23.3, when a Developer License expires (Section 9.7), or when this Agreement
+terminates (Section 17.5).
+
+9.9 **Keeping licensing intact.** Subject to Section 7.2, you will not (a) forge,
+alter or replay a License File, a Usage Report or a response from the Synauson
+Services, or otherwise get around the licensing of the Software, in order to obtain
+AI Capabilities, AI Sessions or Conferences beyond your Plan, Session Limit and
+Conference Limit; (b) access the
+Synauson Services other than through the Software (including the Software as modified
+under Section 7.2) or as the Documentation describes; or (c) distribute any tool or
+patch whose primary purpose is to do either. A network outage, firewall or proxy that
+keeps an Instance from reaching the Synauson Services is not circumvention; Sections
+9.4 and 9.5 cover it.
+
+---
+
+## 10. Fees
+
+10.1 **Fees.** You will pay the fees stated in your Order Form or purchase flow, in
+the currency and on the terms stated there, and any invoice under Section 3.6. Fees
+are exclusive of taxes. You are responsible for all sales, use, value-added and
+similar taxes on your purchase, other than taxes on Synauson's income.
+
+10.2 **No fees.** The Free Plan, Developer Licenses and Bonus Sessions carry no fees.
+
+---
+
+## 11. Support and Updates
+
+11.1 **Support.** Synauson provides support for paid Plans as your Plan or Order
+Form states and under its support policy published at synauson.com/legal. Unless they
+say otherwise, support is by email on business days, and Synauson publishes security
+fixes for the current and the previous minor release. A change to the support policy
+does not reduce the support you receive during a subscription term you have already
+paid for. Synauson has no support obligation for the Free Plan, or for a Developer
+License beyond what Section 2.8(e) provides.
+
+11.2 **Updates.** Synauson may make updates available, and you may choose when to
+install them. You may keep running any release you have under this Agreement while
+it can renew its License File with the Synauson Services. Synauson will give at
+least 90 days' notice by email before a release can no longer renew, and will offer
+an update that can.
+
+11.3 **Previews.** Features the Documentation marks as preview are provided as is,
+may change or be removed, and are excluded from any warranty or service level.
+
+---
+
+## 12. Data and Privacy
+
+12.1 **How the Software stays licensed.** The Software must connect to the Synauson
+Services to renew its License File and report usage (Section 9.2), unless you have an
+air-gapped deployment under Section 9.3. Sections 12.3 and 12.4 and, if you join the
+Program, Section 13.2 list everything it sends to the Synauson Services and, under
+the Program, to Synauson. None of it is Your Content.
+
+12.2 **Your Content stays with you.** The Software processes Your Content on the
+systems where you run it. Models run locally. The Software does not send Your Content
+to Synauson or to any model provider, other than to a service under Section 12.8 that
+you choose to use, and Synauson does not receive, store or use Your Content, except
+through such a service or in what you choose to send us, for example with a support
+request. Where Your Content goes beyond the Software is decided by you and your
+Customer Products.
+
+12.3 **What licensing sends.** To renew the License File and share your pools, the
+Software sends the following to the Synauson Services, over an encrypted connection,
+and nothing else:
+
+(a) your License Key;
+
+(b) on renewal, and when an Instance starts without a License File, requests to
+validate the License Key and to renew the License File;
+
+(c) Usage Reports, each containing only: your license's identifier; a random
+identifier that the Instance's process creates when it starts; a sequence number; the
+Software's version; whether it runs as the server or the Engine Libraries; the number
+of AI Sessions active; the peak number of AI Sessions in each minute not yet
+received; the numbers of AI Sessions admitted, refused and admitted above the Session
+Limit since the last report Synauson received from that Instance; the share of the AI
+Session pool the Instance holds; the number of Conferences active, their peak number
+in each minute not yet received, the numbers of Conferences admitted, refused and
+admitted above the Conference Limit since that last report, and the share of the
+Conference pool the Instance holds; the time the report was sent; and whether the
+request also renews the License File or is the last before the Instance stops;
+
+(d) the name and version of the Software; and
+
+(e) what any internet connection necessarily carries, including the public IP address
+the request comes from and standard HTTP headers.
+
+The Software reaches the Synauson Services at license.synauson.com and
+usage.synauson.com. To check for outage notices under Section 9.5, it also reads
+Synauson's status service at status.synauson.com, sending only what Section 12.3(d)
+and (e) describe. None of these requests carries a machine fingerprint, hardware
+identifier, host name, user name, conference or participant identifiers or content,
+or Your Content.
+
+12.4 **What Model downloads send.** To download a Model, the Software sends your
+License Key and the identifiers of the Model release and file it needs to the
+Synauson Services, with the information in Section 12.3(d) and (e). The Synauson
+Services answer with a short-lived signed link to the file in Synauson's storage at
+Cloudflare (Section 12.7). The Software follows that link without your License Key,
+so the storage receives only the request for that file and the information in Section
+12.3(d) and (e). The Software may resume an interrupted download with further
+requests of the same kind.
+
+12.5 **Connections you configure.** Apart from Sections 12.3, 12.4 and 13, and the
+local events in Section 12.6, the Software connects only to systems you configure,
+such as SIP and WebRTC peers and STUN or TURN servers. It uses no STUN or TURN server
+unless you configure one. Synauson receives none of that traffic, unless what you
+configure is a service under Section 12.8.
+
+12.6 **Local diagnostic events on Windows.** On Windows, the ONNX Runtime library
+that ships with the Software writes a few startup events to the operating system's
+local event-tracing system before the Software turns off the library's telemetry: the
+runtime's version, the start and end of loading its CPU backend, and one event for
+each type of GPU or NPU present, with the device's name and driver version. After
+that it writes nothing per session or per inference, unless someone on that machine
+deliberately starts a trace session that turns those events back on. The Software
+sends none of these events anywhere. Whether Windows passes them to its publisher
+depends on your Windows diagnostic-data settings.
+
+12.7 **How Synauson uses License Data.** Synauson uses License Data only to issue,
+verify, renew, suspend and apply licenses, to share and bill AI Sessions and
+Conferences under Section 3, to deliver Models, to secure and operate the Synauson
+Services, to prevent abuse, to provide support and billing, and to comply with law.
+Synauson does not sell it, does not use it for advertising, and keeps it only as long
+as needed for those purposes or as the law requires. Synauson runs its licensing
+server itself. Cloudflare, Inc., Synauson's hosting and network provider, carries
+requests to that server, runs the usage and status services and stores the Model
+files. It processes License Data, and what the Software sends when it reads the
+status service, only on Synauson's instructions and for these purposes.
+
+On every Plan, the usage service keeps a record of where each license's Usage Reports
+come from: each public IP address from which it accepts a Usage Report for that
+license (the address in Section 12.3(e)), kept for an IPv6 address as its /64 network
+rather than the full address, the country Cloudflare derives from that address, and
+when the address was first and last seen, up to a fixed maximum number of addresses
+per license. These records hold no names, email addresses, host names or anything
+about your calls. The usage service records nothing else about those requests, and
+the Software sends nothing extra for it. Synauson uses these records only to detect
+and stop misuse of Free Plan licenses and Developer Licenses, and keeps them on every
+Plan so that holding a paid license does not hide such misuse. Each record is deleted
+90 days after its address was last seen, unless the law requires Synauson to keep it
+longer. Synauson never sells these records, never shares them with anyone for that
+recipient's own purposes and never uses them for advertising. Cloudflare holds them
+only as Synauson's hosting provider, on its instructions, and Synauson discloses them
+otherwise only where the law requires. Separately from these records, Cloudflare
+keeps the Synauson Services' request logs, which may include the address, for a few
+days, and Synauson's licensing server keeps logs of the requests it receives,
+including the requesting IP address, the license and the Software's user agent, for
+at most 14 days. An IP address can be personal data under data protection law;
+Section 12.9 states Synauson's role for it.
+
+12.8 **No new data without notice, and never Your Content unless you choose.**
+Synauson will not release a version of the Software that sends Synauson data beyond
+Sections 12.3 and 12.4, other than under the Program, or that sends, under the
+Program or otherwise, any item, other than Your Content, that the last paragraph of
+Section 12.3 excludes, unless it first describes that data in the Documentation and
+in the release notes of that version. No version of the Software, under the Program
+or otherwise, will send Synauson Your Content, whatever the Documentation or release
+notes say. The one exception is a service, such as a hosted relay or a hosted
+feature, that Synauson offers separately from the Synauson Services and that you
+choose to use through a setting for that service that the Documentation says sends
+Your Content to it. That service handles Your Content under its own terms, which you
+accept separately, and the Software sends it only the parts of Your Content it needs
+to provide what you chose. Only you, or someone acting for you other than Synauson,
+can make that choice; no default setting, preset, sample configuration or
+pre-selected option that Synauson supplies makes it for you. The exception never
+covers License Data, Usage Reports, License File renewals, status checks, Model
+downloads, telemetry, anything sent under the Program, or anything else the Software
+sends without that choice. Data for improving Synauson's Models or product is
+collected, including through such a service, only under Section 13.
+
+12.9 **Roles under data protection law.** You decide which of Your Content is
+processed, and how, and you are responsible for it as controller or the equivalent
+role. Except through a service under Section 12.8, whose own terms set out the roles
+for it, Synauson does not receive Your Content and so does not process it on your
+behalf. To the extent License Data or Program Data are personal data, Synauson
+processes them as an independent controller for the purposes in Sections 12.7 and
+13.5.
+
+---
+
+## 13. Model Improvement Program
+
+13.1 **Off unless you turn it on.** The Program is optional and off by default.
+Synauson may offer it in a future version of the Software; this Section sets the
+terms on which it will run. The Software sends nothing under the Program unless you
+turn it on for your license, as the Documentation describes. Declining it never
+reduces your Plan, your Session Limit, your Conference Limit or your support.
+
+13.2 **What is sent.** When the Program is on, the Software sends Synauson Program
+Data: aggregate statistics about the Software's own operation, computed on your
+systems over a reporting period across all the Calls an Instance handled in it, and
+limited to:
+
+(a) histograms of processing latency;
+
+(b) histograms of the confidence scores the Models produce;
+
+(c) turn statistics, such as counts and histograms of turn and pause durations;
+
+(d) counts of error codes;
+
+(e) the hardware class of the host, such as its processor family and instruction-set
+level, core count, memory size band and accelerator type; and
+
+(f) the versions of the Software and the Models, the Plan, and your license's
+identifier, so that Synauson can credit Bonus Sessions.
+
+13.3 **Never a single call.** The Software sends statistics for a reporting period
+only if they cover at least 20 Calls; otherwise it carries them into the next
+period. Histogram buckets with fewer than 5 entries are merged or left out.
+
+13.4 **Hard limits.** The Program never sends, and Synauson never collects under it:
+audio; transcripts or any other text; synthesized speech; embeddings, voice features
+or any other representation of a voice or of speech content; per-call, per-conference
+or per-participant records; telephone numbers, SIP or WebRTC addresses or any other
+identifier of a caller; or anything else that is Your Content.
+
+13.5 **Transparency and use.** Synauson will publish the exact schema of Program Data
+before any version that changes it, and the Software lets you view each payload on
+your own systems before it is sent. You grant Synauson a non-exclusive, perpetual,
+royalty-free license to use Program Data to improve its Models and the Software,
+including their accuracy, latency and hardware support. Synauson does not sell
+Program Data, does not use it for advertising, and does not disclose it except to
+service providers bound to use it only for those purposes, or in aggregate form that
+does not identify you.
+
+13.6 **Bonus Sessions.** While the Program is on for your license, Synauson adds the
+number of Bonus Sessions stated in your Plan or Order Form to your Session Limit, at
+no charge. Bonus Sessions apply to paid Plans only, not to the Free Plan or Developer
+Licenses, and add nothing to your Conference Limit. Synauson
+does not reduce any Plan to fund them. Where an Order Form grants an unlimited
+Session Limit, Bonus Sessions do not apply.
+
+13.7 **Opting out.** You may turn the Program off at any time, and the Software then
+stops sending Program Data. Your Bonus Sessions continue until the later of the end
+of your current subscription term and 30 days after you opt out, and Synauson will
+tell you by email when they will end. Calls in progress are never ended because Bonus
+Sessions end.
+
+13.8 **Delivery problems.** If Program Data stops arriving from a license that has
+opted in, for example because of a firewall, Synauson will not withdraw the Bonus
+Sessions without first telling you and giving you at least 30 days
+to fix the problem or to opt out.
+
+13.9 **Changes to the Program.** Synauson may change or end the Program by giving you
+at least 60 days' notice by email. A change may not widen Section 13.2 or narrow
+Section 13.3 or 13.4 unless you accept a new version of this Agreement. If the
+Program ends, Bonus Sessions end as Section 13.7 provides, counted from the end of
+the notice period.
+
+---
+
+## 14. Your Responsibilities
+
+14.1 **Laws on calls and recordings.** You are responsible for complying with the
+laws that apply to the calls, conferences and media you process with the Software,
+including laws on interception, recording, monitoring and transcription of
+communications (some require the consent of every party), privacy and data
+protection, biometric data, telemarketing and automated calls, and disclosure of
+automated or synthesized voices, and for giving the notices and obtaining the
+consents those laws require.
+
+14.2 **Your systems.** You are responsible for the systems on which you run the
+Software, including their security, network exposure, backups and the third-party
+software they need, and for restricting access to the Software's network interfaces.
+
+14.3 **AI output.** AI Capabilities produce probabilistic output. Transcripts,
+detections and synthesized speech can be wrong, and should not be the sole basis for
+decisions where an error could affect someone's safety.
+
+14.4 **Emergency and critical uses.** The Software is not designed or tested for use
+where its failure could lead to death, personal injury or severe physical or
+environmental damage, or as the sole means of handling calls to emergency services.
+
+---
+
+## 15. Export Control and Sanctions
+
+15.1 **Compliance.** The Software and Models are subject to the export control and
+sanctions laws of the United States, including the Export Administration Regulations
+and the sanctions programs of the Office of Foreign Assets Control, and may be
+subject to those of other countries. You will comply with those laws in your use and
+any distribution of the Software and Models.
+
+15.2 **Prohibited destinations and parties.** You represent that you are not located
+in, organized under the laws of, or ordinarily resident in a country or region
+subject to comprehensive U.S. sanctions, and that you are not on, or owned or
+controlled by a party on, any U.S. government list of restricted parties. You will
+not export, re-export, transfer or provide access to the Software or Models to any
+such country, region or party, or for any end use those laws prohibit. Giving a
+sanctioned party access to the Software or a Customer Product can violate those laws
+even when nothing is shipped.
+
+15.3 **Effect.** Synauson may suspend or refuse a License Key, and may terminate this
+Agreement, where needed to comply with those laws.
+
+---
+
+## 16. Ownership
+
+16.1 **Synauson's property.** The Software is licensed, not sold. Synauson and its
+licensors own all rights in the Software. Open-Source Components, the original parts
+of Models and the Separately Licensed Materials belong to their licensors.
+
+16.2 **Your property.** As between you and Synauson, you own Your Content and your
+Customer Products (other than the Software in them). Synauson claims no right in Your
+Content.
+
+16.3 **Trademarks.** This Agreement grants no right to use Synauson's names, logos
+or trademarks, except to identify the Software truthfully, for example in your
+documentation or in the notices Section 4.3 requires.
+
+---
+
+## 17. Term and Termination
+
+17.1 **Term.** This Agreement starts when you accept it and continues until it is
+terminated under this Section.
+
+17.2 **End of a subscription.** When a paid Plan's subscription term ends without
+renewal, your license moves to the Free Plan under Section 9.7, and this Agreement
+remains in force. Your Order Form may provide a wind-down period, including for End
+User installations.
+
+17.3 **Termination by you.** You may terminate this Agreement at any time by
+notifying Synauson and stopping use of the Software. Prepaid fees are not refunded,
+except under Sections 8.5, 17.4 and 18.2 or your Order Form.
+
+17.4 **Termination for breach.** Either party may terminate this Agreement by written
+notice if the other materially breaches it and does not cure the breach within 30
+days after written notice describing it. Synauson may terminate on shorter notice
+where Section 15 requires it. Synauson never terminates this Agreement or disables a
+License Key for unpaid fees; Section 9.8's sentence on unpaid fees sets their only
+effect on your license, and Synauson may still collect them. If you terminate for
+Synauson's uncured breach, Synauson will refund the prepaid fees for the rest of the
+term.
+
+17.5 **Effect of termination.** When this Agreement terminates, your license to the
+Software ends, you must stop using the Software and delete it, subject to any
+wind-down period in your Order Form, and Synauson may disable your License Keys.
+Termination does not affect your obligation to pay fees accrued before termination,
+or the rights you have under any Open-Source License, Model Terms or the license of
+the Separately Licensed Materials, which continue under their own terms.
+
+17.6 **Survival.** Sections 1, 3.6, 4.3 to 4.5, 5, 7.1, 7.4, 7.5, 8.3, 9.1, 9.9, 10,
+12.2, 12.7, 12.9, 13.4, 13.5, 14, 15, 16, 17.5, 17.6 and 18 to 24 survive
+termination.
+
+---
+
+## 18. Warranties and Disclaimer
+
+18.1 **Mutual.** Each party represents that it has the authority to enter into this
+Agreement.
+
+18.2 **Conformity warranty for paid Plans.** For 30 days after a paid Plan's
+subscription term first starts, Synauson warrants that the Software will perform
+materially as the Documentation describes. If you tell Synauson in writing of a
+failure within that period, Synauson will fix it within a reasonable time or, if it
+cannot, you may end the affected Plan and Synauson will refund the fees you paid for
+it. That is your only remedy under this warranty. The warranty does not cover
+problems caused by modifications, by components the Documentation does not name, by
+use contrary to the Documentation, by preview features, or by inaccurate AI output.
+
+18.3 **Order Form warranties.** An Order Form may give further warranties, with the
+remedies it states.
+
+18.4 **Disclaimer.** EXCEPT AS SECTIONS 18.2 AND 18.3 PROVIDE, THE SOFTWARE, THE
+MODELS, THE LICENSE FILES AND THE SYNAUSON SERVICES ARE PROVIDED "AS IS" AND "AS
+AVAILABLE". TO THE FULLEST EXTENT PERMITTED BY LAW, SYNAUSON AND ITS LICENSORS
+DISCLAIM ALL OTHER WARRANTIES AND CONDITIONS, WHETHER EXPRESS, IMPLIED OR STATUTORY,
+INCLUDING ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE,
+NON-INFRINGEMENT AND QUIET ENJOYMENT, AND ANY WARRANTY ARISING FROM COURSE OF DEALING
+OR USAGE OF TRADE. SYNAUSON DOES NOT WARRANT THAT THE SOFTWARE WILL BE UNINTERRUPTED
+OR ERROR-FREE, OR THAT THE SYNAUSON SERVICES WILL ALWAYS BE AVAILABLE. Open-Source
+Components and the original parts of Models carry only the warranty terms, if any, of
+their own licenses.
+
+---
+
+## 19. Limitation of Liability
+
+19.1 **Exclusion of indirect damages.** TO THE FULLEST EXTENT PERMITTED BY LAW,
+NEITHER PARTY WILL BE LIABLE TO THE OTHER FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+CONSEQUENTIAL, EXEMPLARY OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE,
+BUSINESS, GOODWILL OR DATA, ARISING OUT OF OR RELATING TO THIS AGREEMENT, HOWEVER
+CAUSED AND UNDER ANY THEORY OF LIABILITY, EVEN IF ADVISED OF THEIR POSSIBILITY.
+
+19.2 **Cap.** TO THE FULLEST EXTENT PERMITTED BY LAW, EACH PARTY'S TOTAL LIABILITY
+ARISING OUT OF OR RELATING TO THIS AGREEMENT, UNDER ANY THEORY OF LIABILITY, WILL NOT
+EXCEED THE GREATER OF (A) THE FEES YOU PAID TO SYNAUSON UNDER THIS AGREEMENT IN THE
+12 MONTHS BEFORE THE EVENT GIVING RISE TO THE LIABILITY AND (B) US$100.
+
+19.3 **Exceptions.** Sections 19.1 and 19.2 do not limit your obligation to pay fees,
+a party's liability for infringing or misappropriating the other's intellectual
+property (other than use of the Software beyond your Session Limit or Conference
+Limit, which Section 3.6 addresses), or your liability for deliberate breach of
+Section 9.9(a) or (c) or for distributing the Software in breach of Section 4.
+Nothing in this Agreement limits liability that cannot be limited under applicable
+law.
+
+19.4 **Open-source rights not limited.** Sections 18 and 19 limit liability and
+remedies only. They do not limit any right granted to you under an Open-Source
+License, Model Terms or the license of the Separately Licensed Materials, or any
+permission in Section 7.2.
+
+19.5 **Basis of the bargain.** The disclaimers and limits in Sections 18 and 19 are
+an essential basis of this Agreement and a reasonable allocation of risk, including
+for Free Plan use and Developer Licenses, for which Synauson receives no fees.
+
+---
+
+## 20. Order Forms and Order of Precedence
+
+20.1 **Order Forms.** An Order Form may grant a Plan, a Session Limit and a
+Conference Limit (including unlimited ones), redistribution or OEM rights, support,
+service levels, warranties, a wind-down period and other terms. Each Order Form is
+governed by this Agreement.
+
+20.2 **Precedence.** If documents conflict, they apply in this order: (a) an
+Open-Source License, as to the component it covers, and Section 7; (b) Model Terms,
+as to their Model; (c) an Order Form, as to the matters it addresses; (d) this
+Agreement; and (e) the Documentation. No Order Form or other document can reduce the
+rights in Section 7.
+
+20.3 **No other terms.** Terms in your purchase orders, vendor portals or similar
+documents do not apply, even if Synauson accepts or acknowledges the document, unless
+Synauson signs them and they refer expressly to this Section.
+
+---
+
+## 21. Governing Law and Disputes
+
+21.1 **Law.** This Agreement is governed by the laws of the State of Utah, United
+States, without regard to its conflict-of-laws rules. The United Nations Convention
+on Contracts for the International Sale of Goods does not apply.
+
+21.2 **Customers in the United States.** If you are organized in, or have your
+principal place of business in, the United States, the state and federal courts
+located in Salt Lake County, Utah, have exclusive jurisdiction over any dispute
+arising out of or relating to this Agreement, and each party consents to their
+jurisdiction and venue.
+
+21.3 **Customers outside the United States.** Otherwise, any dispute arising out of
+or relating to this Agreement will be finally resolved by arbitration administered by
+the International Centre for Dispute Resolution under its International Arbitration
+Rules, before one arbitrator. The seat of arbitration is Salt Lake City, Utah, and
+the language is English. Judgment on the award may be entered in any court with
+jurisdiction.
+
+21.4 **Urgent relief.** Either party may seek injunctive or other urgent relief in
+any court with jurisdiction to protect its intellectual property.
+
+---
+
+## 22. Acceptance
+
+22.1 **How you accept.** You accept this Agreement, together with the Model Terms of
+the Models, by any of the following, and each is binding:
+
+(a) clicking to accept it when you request or receive a License Key through
+Synauson's website or portal;
+
+(b) signing an Order Form or other document that refers to it; or
+
+(c) while Synauson issues License Keys by hand, confirming your acceptance by
+signature or by email in reply to Synauson's message that contains, or links to, this
+Agreement and its version number, and that attaches those Model Terms.
+
+22.2 **No use before acceptance.** You may not run the Software until you have
+accepted this Agreement. A copy of it ships with the Software as its LICENSE file and
+is published at synauson.com/legal, with every earlier version.
+
+---
+
+## 23. Changes to this Agreement
+
+23.1 **Versions.** Synauson identifies each version of this Agreement by a version
+number and an effective date, and keeps every version published at
+synauson.com/legal.
+
+23.2 **The version you accepted governs.** The version you accepted governs your use
+of the Software until you accept a later version. Synauson cannot change your terms
+by publishing a new version alone.
+
+23.3 **Accepting a new version.** Synauson may ask you to accept a new version when
+you obtain a new License Key, renew or change your Plan, sign a new Order Form, or
+join the Program, and may make that acceptance a condition of them. If you do not
+accept, the version you accepted continues to govern until your current subscription
+term ends, and renewing your paid Plan after that requires the new version; if you
+still do not accept, your license continues on the Free Plan under Section 9.7, and
+the rest of this Section applies. The Free Plan has no term: Synauson may ask you to
+accept a new version to keep renewing Free Plan License Files, by email at least 30
+days before the date from which renewals require it. If you have not accepted by that
+date, your Free Plan License Key stops renewing: from each Instance's next renewal
+after that date, that Instance starts no new Calls and cannot restart, and Calls in
+progress finish. This is the only case, other than those in Section 9.8 and the
+expiry of a Developer License (Section 9.7), in which a License Key stops renewing
+while this Agreement is in force.
+
+---
+
+## 24. General
+
+24.1 **Notices.** Synauson may send you notices by email to the contact address
+associated with your License Key or Order Form. Notices that concern all customers
+may also be given in the Documentation, but notices under Sections 2.3, 2.8, 3.6,
+8.5, 9.8, 11.2, 13 and 23.3 are given by email. You may send notices to Synauson at
+the address stated on synauson.com/legal or in your Order Form. Email notices are
+effective when sent, unless the sender receives notice of non-delivery.
+
+24.2 **Assignment.** You may not assign this Agreement without Synauson's prior
+written consent, except to a successor to all or substantially all of your business
+or assets to which it relates, with written notice to Synauson. Synauson may assign
+it to an Affiliate or to a successor in a merger, acquisition or sale of all or
+substantially all of its assets. Any other attempted assignment is void.
+
+24.3 **Force majeure.** Neither party is liable for a failure or delay caused by
+events beyond its reasonable control, other than a failure to pay.
+
+24.4 **U.S. Government users.** The Software is "commercial computer software" and
+the Documentation is "commercial computer software documentation" as used in 48
+C.F.R. 2.101, 12.212 and 227.7202. U.S. Government users acquire them only with the
+rights set out in this Agreement.
+
+24.5 **Independent parties.** The parties are independent contractors. This
+Agreement creates no partnership, joint venture, agency or employment relationship.
+
+24.6 **No third-party beneficiaries.** This Agreement creates no rights for any third
+party. This does not affect any right a licensor has under its own Open-Source
+License or Model Terms.
+
+24.7 **Severability and waiver.** If a court or arbitrator finds any provision
+unenforceable, it will be enforced to the maximum extent permissible and the rest of
+this Agreement will remain in force. A failure or delay in enforcing a provision is
+not a waiver.
+
+24.8 **Entire agreement.** This Agreement, with its appendices, the Model Terms and
+any Order Forms, is the entire agreement between the parties about its subject
+matter and supersedes all earlier agreements and understandings about it.
+
+24.9 **Electronic signatures and language.** The parties may accept this Agreement
+and sign Order Forms electronically and in counterparts. This Agreement is written
+in English, and the English version governs.
+
+24.10 **Interpretation.** Headings are for convenience only. "Including" means
+"including without limitation".
+
+---
+
+## Appendix A: Open-Source Components
+
+The Notice Files that ship with each release are the authoritative list of its
+Open-Source Components and prevail over this Appendix.
+
+**Where the notices are.**
+
+- **Server Image:** this Agreement (LICENSE), the synauson Notice File, the list of
+  third-party Rust crates, the ONNX Runtime third-party notices, the source-access
+  notice and the list of included operating-system packages in
+  `/usr/share/doc/synauson/`, and the copyright file of each included
+  operating-system package under `/usr/share/doc/`.
+- **jsyn-natives packages:** this Agreement (LICENSE), the synauson Notice File, the
+  list of third-party Rust crates and the ONNX Runtime third-party notices in each
+  package's `META-INF/` directory.
+- **Models:** each Model's Notice File, stored beside the Model in the model store
+  (Appendix B).
+- **Separately Licensed Materials:** the `LICENSE` and `NOTICE` files that accompany
+  them.
+
+**Main components and their licenses.**
+
+| Component | Where | License |
+|---|---|---|
+| GStreamer and its plugins, GLib, and related multimedia libraries | Included in the Server Image; installed by you for the Engine Libraries | LGPL-2.1 or later (some plugins and libraries are under other Open-Source Licenses, as their copyright files state) |
+| ONNX Runtime | Included in the Server Image and the jsyn-natives packages, and loaded at run time as a separate library that you may replace | MIT |
+| Operating system base and utilities | Included in the Server Image | Various, including GPL-2.0, GPL-3.0, LGPL and permissive licenses, as each package's copyright file states |
+| Third-party Rust crates compiled into the Software | Server binary and Engine Libraries | Various permissive licenses, as the list of crates states |
+| Third-party work from which Synauson's English grapheme-to-phoneme stage is derived | Notice in the synauson Notice File; Synauson's derived code is part of the Software | Apache-2.0 |
+| Third-party work from which Synauson's English tokenizer rules are derived | Notice in the synauson Notice File; Synauson's derived rules are part of the Software | MIT |
+| jsyn Java SDK; synauson gRPC API definitions and generated client packages | Separately Licensed Materials (Section 6) | Apache-2.0 |
+
+**Source code.** Section 7.4 describes the companion source image published for each
+release of the Server Image.
+
+**Replacing LGPL libraries.** The Server Image and the Engine Libraries load
+GStreamer and GLib as shared libraries. The Documentation describes how to run the
+Software with a modified or replacement version of them, as Section 7.2 permits.
+
+---
+
+## Appendix B: Models
+
+Each Model is identified by codename. Its Notice File, given to you when your
+License Key is issued and delivered with the Model, states the work it is derived
+from, the full Model Terms, the attribution its licensor requires, and any Synauson
+Model Changes. The Notice File prevails over this summary.
+
+| Model | AI Capability | Model Terms (summary) |
+|---|---|---|
+| sentito-1 | Voice activity detection | MIT License |
+| fermata-1 | End-of-turn detection | BSD 2-Clause License |
+| spartito-1 | Speech-to-text | A third-party open model license. It permits commercial use, modification and redistribution. It requires its full text and a stated attribution to accompany any redistribution, requires use consistent with its licensor's responsible-use terms, includes an indemnity by you in favor of its licensor, may be updated by its licensor, and ends automatically if you bring certain intellectual property claims about the model or circumvent its safeguards. |
+| lettura-2 | Text-to-speech, with its voices, lexicons and part-of-speech tagger | Apache License, Version 2.0, for the model, voices and lexicons. Synauson trained the part-of-speech tagger itself; it is a Synauson Model Change (Section 8.4), licensed under this Agreement. The tags it learned from came from a tagger under the MIT License, whose notice is in the Notice File. |
+
+---
+
+*End of Agreement.*
